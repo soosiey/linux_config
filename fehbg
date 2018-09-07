@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --bg-scale '/home/suhaas/Documents/backgrounds/PaintedGirl.jpg' 

@@ -1,0 +1,23 @@
+PATH=$PATH:~/Downloads/Maven/bin:~/Downloads/IntelliJ/bin:~/Downloads/mysql-shell/bin:~/Discord/:~/android-studio/bin:~/altera/15.0/quartus/bin:$HOME/.Pokemon-Terminal:~/lein/
+
+###############
+###Functions###
+###############
+function uiuc {
+
+    ssh -X sny2@linux-$1.ews.illinois.edu;
+
+}
+
+function killDiscord {
+
+    PIDS="$(pidof Discord)"
+    kill -9 ${PIDS}
+}
+
+
+#export QSYS_ROOTDIR="/home/suhaas/altera/15.0/quartus/sopc_builder/bin"
+export QSYS_ROOTDIR="/home/suhaas/altera/15.0/quartus/"
+export ALTERAOCLSDKROOT="/home/suhaas/altera/15.0/hldnd"
+export  SOPC_KIT_NIOS2="/home/suhaas/altera/15.0/nios2eds"
+

@@ -1,0 +1,37 @@
+[core]
+   pager = less -X
+   excludesFile =
+   editor = vim
+[color]
+   diff = always
+   status = always
+   branch = always
+   interactive = always
+   ui = true
+   pager = true
+[alias]
+   dt = difftool --dir-diff
+    #Shows the commit corresponding to the merge of branch $1 into branch $1
+   aftermerge = "!f() { git rev-list --ancestry-path $1 --not $2 | tail -1; }; f"
+   justbranch = "!f() { git rev-list $1 --not ${2}^; }; f"
+    #pl = log --graph --format=oneline --abbrev-commit --decorate --all
+   pl = log --graph --format=oneline --abbrev-commit --decorate
+[http]
+   sslverify = false
+[rerere]
+   enabled = true
+[include]
+   path = ~/.mygitconfig
+[user]
+    email = yerapathisuhaas@gmail.com
+    name = soosiey
+[diff]
+   tool = vimdiff
+[difftool]
+   prompt = false
+[merge]
+   tool = vimdiff
+[credential]
+   helper = store --file ~/.git/credentials
+[diff "zip"]
+   textconv = unzip -c -a
