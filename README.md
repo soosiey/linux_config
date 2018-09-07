@@ -5,7 +5,7 @@ This repo contains all the configuration files for running my workflow on a Linu
 
 The current progress is creating a mybashrc and mybashprofile, and sourcing them from bashrc and bash_profile. This allows the bashrc and bash_profile to be consistent across machines and the user to add whatever customizations they want to the custom files.
 
-The functions.sh file is currently working for what it does: it will link a couple of the config files in the home directory in such a way that they are sourced when needed, (ex: vimrc will be checked upon opening vim even though it is just a symlink).
+The functions.sh file is currently working for what it does: it will link a couple of the config files in the home directory in such a way that they are sourced from wherever the config folder is.
 The symlink structure allows editing to happen all in one place so that commits to git can be made, as well as keeping everything nice and clean :).
 
 IN PROGRESS:
