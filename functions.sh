@@ -1,7 +1,7 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-files=(tmux.conf gitconfig vimrc)
+files=(bash_aliases, Xresources, bash_profile, bashrc, gitconfig, mybashprofile, mybashrc, vimrc, myvimrc, xbindkeysrc, xinitrc)
 
 function install_files()
 {
