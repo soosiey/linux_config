@@ -4,7 +4,5 @@
 
 ###### COWSAY ##############
 
-RANDFILE=$(ls /usr/share/cows|shuf -n 1)
 RANDPHRASE=$(fortune)
-cowsay -f $RANDFILE $RANDPHRASE
-
+echo $RANDPHRASE

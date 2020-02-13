@@ -15,7 +15,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'luochen1990/rainbow'
 Plugin 'joonty/vim-do'
 Plugin 'wkentaro/conque.vim'
@@ -29,6 +29,9 @@ Plugin 'tpope/vim-markdown'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-scripts/a.vim'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'c.vim'
+Plugin 'klen/python-mode'
+Plugin 'tmhedberg/SimpylFold'
 try
    source ~/.myvimrc_vundle_plugins
 catch
@@ -95,6 +98,11 @@ nnoremap <leader>sp :split
 map  <Leader>f <Plug>(easymotion-bd-f)
 nmap <Leader>f <Plug>(easymotion-overwin-f)
 
+"syntax
+"pymode running
+let g:pymode_python = 'python3'
+let g:pymode_run_bind = '<leader>py'
+let g:pymode_lint_checkers = ['pyflakes']
 " Move to line
 map <Leader>L <Plug>(easymotion-bd-jk)
 nmap <Leader>L <Plug>(easymotion-overwin-line)

@@ -23,8 +23,8 @@
 [include]
    path = ~/.mygitconfig
 [user]
-    email = yerapathisuhaas@gmail.com
-    name = soosiey
+	email = sny2@illinois.edu
+	name = sny2
 [diff]
    tool = vimdiff
 [difftool]
@@ -32,6 +32,6 @@
 [merge]
    tool = vimdiff
 [credential]
-   helper = store --file ~/.git/credentials
+	helper = cache
 [diff "zip"]
    textconv = unzip -c -a

@@ -2,11 +2,10 @@
 # ~/.bash_profile
 #
 
-if [[ ! $DISPLAY &&  $XDG_VTNR -eq 1 ]]; then
-	exec startx
-fi
-
-
 if [ -f ~/.mybashprofile ]; then
     source ~/.mybashprofile
+fi
+
+if [ -f ~/.bashrc ]; then
+    source ~/.bashrc
 fi

@@ -165,7 +165,4 @@ export ALTERAOCLSDKROOT="/home/suhaas/altera/15.0/hld"
 if [ -f ~/.mybashrc ]; then
     source ~/.mybashrc
 fi
-if [ -f ~/.bash_profile ]; then
-    source ~/.bash_profile
-fi
 
