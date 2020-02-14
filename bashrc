@@ -69,6 +69,17 @@ prompt_command () {
         *) HPWD="$PWD";;
     esac;
         PS1="\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]$HPWD$ \[\033[00m\]"
+    if [ -z "$VIRTUAL_ENV_DISABLE_PROMPT" ] ; then
+        _OLD_VIRTUAL_PS1="$PS1"
+
+        if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
+            # special case for Aspen magic directories
+            # see http://www.zetadev.com/software/aspen/
+            PS1="[`basename \`dirname \"$VIRTUAL_ENV\"\``] $PS1"
+        elif [ "$VIRTUAL_ENV" != "" ]; then
+            PS1="(`basename \"$VIRTUAL_ENV\"`)$PS1"
+        fi
+    fi
 }
 PROMPT_COMMAND=prompt_command
 
@@ -165,4 +176,19 @@ export ALTERAOCLSDKROOT="/home/suhaas/altera/15.0/hld"
 if [ -f ~/.mybashrc ]; then
     source ~/.mybashrc
 fi
+#add_venv_info () {
+#    if [ -z "$VIRTUAL_ENV_DISABLE_PROMPT" ] ; then
+#        _OLD_VIRTUAL_PS1="$PS1"
+#
+#        if [ "`basename \"$VIRTUAL_ENV\"`" = "__" ] ; then
+#            # special case for Aspen magic directories
+#            # see http://www.zetadev.com/software/aspen/
+#            PS1="[`basename \`dirname \"$VIRTUAL_ENV\"\``] $PS1"
+#        elif [ "$VIRTUAL_ENV" != "" ]; then
+#            PS1="(`basename \"$VIRTUAL_ENV\"`)$PS1"
+#        fi
+#    fi
+#    export PS1
+#}
+#PROMPT_COMMAND=add_venv_info
 
