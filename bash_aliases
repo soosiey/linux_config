@@ -1,6 +1,2 @@
 alias clone='git clone'
 alias ews='ssh -X sny2@linux.ews.illinois.edu'
-alias volcont='pavucontrol'
-alias dock='sudo systemctl start docker.service'
-alias viewpdf='okular'
-alias classes='cd ~/Documents/School'
