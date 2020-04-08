@@ -170,8 +170,6 @@ fi
 
 
 
-export QSYS_ROOTDIR="/home/suhaas/altera/15.0/quartus/sopc_builder/bin"
-export ALTERAOCLSDKROOT="/home/suhaas/altera/15.0/hld"
 #xrdb < ~/.config/rofi/config/rofi-example.config
 if [ -f ~/.mybashrc ]; then
     source ~/.mybashrc
@@ -194,4 +192,7 @@ fi
 #    export PS1
 #}
 #PROMPT_COMMAND=add_venv_info
-
+export PATH=/usr/local/cuda/bin:$PATH
+export PATH=$PATH:/var/lib/snapd/snap/bin
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+export GOPATH=$HOME/go
