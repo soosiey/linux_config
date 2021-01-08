@@ -31,7 +31,8 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'c.vim'
 Plugin 'klen/python-mode'
-Plugin 'tmhedberg/SimpylFold'
+Plugin 'godlygeek/tabular'
+"Plugin 'tmhedberg/SimpylFold'
 try
    source ~/.myvimrc_vundle_plugins
 catch
